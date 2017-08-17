@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HelloWorldComponent} from './hello-world/hello-world.component';
+import {ReportsListComponent} from './reports/reports-list/reports-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent
+    HelloWorldComponent,
+    ReportsListComponent
   ],
   imports: [
     BrowserModule,
