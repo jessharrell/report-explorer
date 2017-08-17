@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Report} from '../report';
 
 @Component({
   selector: 'app-reports-list',
@@ -6,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./reports-list.component.css']
 })
 export class ReportsListComponent implements OnInit {
-  @Input() reports: any[];
+  @Input() reports: Report[];
 
   constructor() { }
 
