@@ -22,4 +22,9 @@ describe('HelloWorldComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display hello world rocks text', () => {
+    expect(fixture.nativeElement.querySelector('#greeting').textContent.trim())
+      .toEqual('hello-world works!');
+  });
 });
