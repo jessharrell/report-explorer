@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {MdDialog} from '@angular/material';
+import {AwesomeDialogComponent} from './awesome-dialog/awesome-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(public dialog: MdDialog) {}
+
+  openDialog() {
+    this.dialog.open(AwesomeDialogComponent);
+  }
 }
